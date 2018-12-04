@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
         .excludeFieldsWithoutExposeAnnotation()
         .create();
     service = new Retrofit.Builder()
-        .baseUrl("http://10.0.2.2:8080/")
+        .baseUrl("http://evejrobles.com/rest/")
         .addConverterFactory(GsonConverterFactory.create(gson))
         .build()
         .create(DicewareService.class);
